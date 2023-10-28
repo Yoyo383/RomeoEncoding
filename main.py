@@ -127,9 +127,13 @@ def main():
         return
 
     if sys.argv[1] == 'encrypt':
+        logging.debug('Started encrypting process.')
         encrypt()
+        logging.debug('Finished encrypting process.')
     elif sys.argv[1] == 'decrypt':
+        logging.debug('Started decrypting process.')
         decrypt()
+        logging.debug('Finished decrypting process.')
     else:
         print("Argument not valid. Please specify 'encrypt' or 'decrypt' when running the program.")
         logging.error(f"User entered '{sys.argv[1]}', invalid argument.")

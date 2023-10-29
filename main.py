@@ -78,6 +78,9 @@ def decrypt_msg(msg):
     :rtype: str
     :return: The decrypted message.
     """
+    if msg == '':
+        return ''
+
     values = list(ENCRYPT_DICT.values())
     keys = list(ENCRYPT_DICT.keys())
 

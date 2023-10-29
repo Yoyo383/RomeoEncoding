@@ -97,8 +97,8 @@ def encrypt():
 
     write_to_file('encrypted_msg.txt', encrypted)
 
-    print(f'The encrypted message is saved in encrypted_msg.txt')
-    logging.info(f'The encrypted message is saved in encrypted_msg.txt')
+    print('The encrypted message is saved in encrypted_msg.txt')
+    logging.info('The encrypted message is saved in encrypted_msg.txt')
 
 
 def decrypt():

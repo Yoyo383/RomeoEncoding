@@ -123,7 +123,7 @@ def main():
     """
     if len(sys.argv) < 2:
         print("Argument not found. Please specify 'encrypt' or 'decrypt' when running the program.")
-        logging.error('User did not enter an argument.')
+        logging.warning('User did not enter an argument.')
         return
 
     if sys.argv[1] == 'encrypt':
@@ -136,7 +136,7 @@ def main():
         logging.debug('Finished decrypting process.')
     else:
         print("Argument not valid. Please specify 'encrypt' or 'decrypt' when running the program.")
-        logging.error(f"User entered '{sys.argv[1]}', invalid argument.")
+        logging.warning(f"User entered '{sys.argv[1]}', invalid argument.")
 
 
 if __name__ == '__main__':
